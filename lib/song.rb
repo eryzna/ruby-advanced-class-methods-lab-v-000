@@ -15,10 +15,6 @@ class Song
     self.all[-1]
   end
 
-  def name
-    @name=name
-  end
-
   def self.new_by_name(name)
     self.new.name
 
