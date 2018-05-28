@@ -19,7 +19,7 @@ class Song
     #@name=name
    self.new
     #@name=name
-    
+
 
   end
 
