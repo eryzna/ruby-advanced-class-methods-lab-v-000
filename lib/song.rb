@@ -48,13 +48,14 @@ class Song
   def self.new_from_filename (filename)
     elements=filename.split("-")
     artist_name=elements[0]
-    name=elements[1].gsub(/[.mp3]/,"")
+    song_name=elements[1].gsub(/[.mp3]/,"")
     #artist_name=elements[0]
     #song_name=elements_song[0]
 
     song=self.new
     song.name=song_name
     song.artist_name=artist_name
+    song
 
 
   end
