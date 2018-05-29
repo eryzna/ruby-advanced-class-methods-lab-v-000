@@ -49,7 +49,11 @@ class Song
     elements=filename.split("-")
     artist_name=elements[0]
     elements_song=elements.split(".")
-    song=elements_song[0]
+    song_name=elements_song[0]
+
+    song=self.new
+    song.name=song_name
+    song.artist=artist_name
 
   end
 end
