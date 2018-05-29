@@ -21,7 +21,10 @@ class Song
     song.name=song_name
     song
   end
-    #@name=name
+
+  def self.create_by_name(song_name)
+    self.new_by_name.save
+  end
 
 
 
