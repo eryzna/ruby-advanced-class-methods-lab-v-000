@@ -47,7 +47,8 @@ class Song
 
   def self.new_from_filename (filename)
     elements=filename.split("-")
-    puts elements
+    artist_name=elements[0]
+    song_name=elements[1].gsub(/[.mp3]/,'nil')
     #artist_name=elements[0]
     #song_name=elements_song[0]
 
