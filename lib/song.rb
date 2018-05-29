@@ -27,9 +27,13 @@ class Song
     song.name=song_name
     song.save
     song
-
   end
 
+  def self.find_by_name(song_name)
+    self.all.detect{|songs| song.name==song_name}
+
+
+end
 
 
 end
